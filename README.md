@@ -1,20 +1,20 @@
-Sports Calendar Scripts
+# Sports Calendar Scripts
 
 This set of scripts utilizes Google API alongside a series of sports APIs to add my favourite teams to my google calendar.
 
-Data Sources:
-Football API: Gathered by this link: https://docs.football-data.org/general/v4/team.html
+## Data Sources:
+Football API: [https://docs.football-data.org/general/v4/team.html](https://www.football-data.org/)
 Google Calendar API: https://console.cloud.google.com/apis/credentials?inv=1&invt=AblHHg&project=sports-calendar-2
 
-Google Calendar API Notes:
+## Google Calendar API Notes:
 Generated through Google Cloud Console:
 https://console.cloud.google.com/apis/credentials?inv=1&invt=AblHHg&project=sports-calendar-2
 
-Helpful links: 
+### Helpful links: 
 Setting up google api: https://developers.google.com/calendar/api/quickstart/python
 Example of generating calendar items: https://medium.com/@ayushbhatnagarmit/supercharge-your-scheduling-automating-google-calendar-with-python-87f752010375
 
-Summary:
+## Summary:
 - Requires a 'Project' to be created
 - Requires an Oauth credentials to be set up to be able to use your google account
 - Requires API to be enabled
@@ -31,3 +31,7 @@ To modify these, you can apply the following steps:
 - Once Oath is set up, the json file for the credentials was downloaded and added locally (titled credentials.json)
 - The script then reads these credentials, creates a token and is then able to access the user's calendar
 - The credentials may expire if not used for 6 months. You may have to follow the steps again for the 'Desktop Client 1' Oauth (in project titled Sports Calendar 2) on google cloud to set it up again
+
+## Football API
+- Quite straightforward, see https://www.football-data.org/documentation/quickstart for api documentation
+- Uses matches entity and teams entity and converts fixture times from UTC to Brisbane time
