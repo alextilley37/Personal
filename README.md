@@ -35,3 +35,7 @@ To modify these, you can apply the following steps:
 ## Football API
 - Quite straightforward, see https://www.football-data.org/documentation/quickstart for api documentation
 - Uses matches entity and teams entity and converts fixture times from UTC to Brisbane time
+
+Next steps: 
+- Automating this to be ran monthly on a schedule
+- Updating the script to include tennis matches
